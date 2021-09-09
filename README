@@ -1,0 +1,15 @@
+ 1. Navigate to this link: http://rali.iro.umontreal.ca/rali/en/wifiner-wikipedia-for-et
+ 2. Click on 'Download most of the resources here' at the bottom of the page
+ 3. Download and extract Documents.tar.bz2 and FineNE.tar.bz2 from the [Google Drive Link](https://drive.google.com/drive/folders/0B6SOo3wyWh6wdGZhYkZDUHRTdkU?resourcekey=0-MIh3gE3MX-ceZlaRKlmxKw) (valid as of writing this) 
+ 4. Folder structure should look something like:
+    
+```
+$ find . -type d
+.
+./FineNE
+./FineNE/FineNoNE
+./FineNE/FineEntity
+./FineNE/NumericNE
+./Documents
+./Documents/Documents
+```
