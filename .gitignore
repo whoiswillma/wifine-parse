@@ -2,3 +2,4 @@ Documents
 FineNE
 *.pickle
 *.index
+__pycache__

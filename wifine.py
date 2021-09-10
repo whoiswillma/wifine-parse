@@ -302,13 +302,20 @@ class FineEntities:
 # Globals
 ###############################################################################
 
-DOCUMENTS_DIR = 'Documents/'
-FINENE_DIR = 'FineNE/'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
+DOCUMENTS_DIR = os.path.join(SCRIPT_DIR, 'Documents/')
+FINENE_DIR = os.path.join(SCRIPT_DIR, 'FineNE/')
 
 DOCUMENT_VOCAB = Vocab(os.path.join(DOCUMENTS_DIR, 'document.vocab'))
 FIGER_VOCAB = Vocab(os.path.join(FINENE_DIR, 'figer.vocab'))
 GILLICK_VOCAB = Vocab(os.path.join(FINENE_DIR, 'gillick.vocab'))
 
-DOCUMENT_INDEX = DocumentIndex(os.path.join(DOCUMENTS_DIR, 'Documents'), cache_path='documents.index')
-FINE_ENTITY_INDEX = FineEntityIndex(os.path.join(FINENE_DIR, 'FineEntity'), cache_path='fineentity.index')
+DOCUMENT_INDEX = DocumentIndex(
+    os.path.join(DOCUMENTS_DIR, 'Documents'), 
+    cache_path=os.path.join(SCRIPT_DIR, 'documents.index')
+)
+FINE_ENTITY_INDEX = FineEntityIndex(
+    os.path.join(FINENE_DIR, 'FineEntity'), 
+    cache_path=os.path.join(SCRIPT_DIR, 'fineentity.index')
+)
 
